@@ -54,3 +54,9 @@ def urmareste_linkuri(start_url, tag, max_depth=5):
             log.append(str(e))
 
     return log
+
+start_url = "https://github.com"
+tag = "a"
+log = urmareste_linkuri(start_url, tag)
+for entry in log:
+    print(entry)
